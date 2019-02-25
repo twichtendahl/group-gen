@@ -1,11 +1,44 @@
 <html>
 
-<head>
-</head>
-<body>
-<h1>This is a Demo</h1>
-</body>
+   <head>
+       <title>Group Generator</title>
+   </head>
 
+   <body>
+       <h1>This is an app to generate teams</h1>
+
+
+       <form id= “studentForm”>
+           <fieldset>
+               <legend>Edit Student List</legend>
+
+               <label for = “student_Name”>Student Name</label>
+               <input name = “student_Name” type = “text”/>
+
+               <label for = “studentID”>Student ID</label>
+               <input name = “studentID” type = “number”/>
+
+
+               <button id=“createStudent” type=“submit”>Create New Student</button>
+               <button id=“deleteStudent” type=“submit”>Delete A Student</button>
+           </fieldset>
+       </form>
+
+
+       <form id= “createTeamForm”>
+           <fieldset>
+               <legend>Create New Teams</legend>
+
+               <label for = “teamSize”>How large of teams do you want?/label>
+               <input name = “teamSize” type = “number”/>
+
+               <button type=“submit”>Create Teams</button>
+           </fieldset>
+       </form>
+
+       <div id=“teamList”></div>
+
+   </body>
 
 
 </html>
