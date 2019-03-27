@@ -1,0 +1,59 @@
+<html>
+
+   <head>
+       <title>Group Generator</title>
+       <link rel="stylesheet" href="style.css">
+       <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Tangerine">
+   </head>
+
+   <body>
+       <h1>This is an app to generate teams</h1>
+
+
+       <form id=“addStudentForm”>
+           <fieldset>
+               <legend>Add Student</legend>
+
+               <label for = “first_name”>First Name</label>
+               <input name = “first_name” type = “text”/>
+               
+               <label for = “last_name”>Last Name</label>
+               <input name = “last_name” type = “text”/>
+
+               <label for = “studentID”>Student ID</label>
+               <input name = “studentID” type = “number”/>
+
+               <button id=“createStudent” type=“submit”>Create New Student</button>
+               
+           </fieldset>
+       </form>
+      
+       <form id="dropStudentForm">
+          <fieldset>
+             <legend>Drop Student</legend>
+             
+             <label for="dropID">Student ID</label>
+             <input name="dropID" type="number"/>
+             
+             <button id=“dropStudent” type=“submit”>Drop Student</button>
+          </fieldset>
+       </form>
+
+       <form id= “createTeamForm”>
+           <fieldset>
+               <legend>Create New Teams</legend>
+
+               <label for = “teamSize”>How large of teams do you want?/label>
+               <input name = “teamSize” type = “number”/>
+
+               <button type=“submit”>Create Teams</button>
+           </fieldset>
+       </form>
+
+       <div id=“teamList”></div>
+
+   </body>
+
+
+</html>
